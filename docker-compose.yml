@@ -3,7 +3,7 @@ services :
   go:
     build: .
     ports:
-      - 8080:80
+      - 8080:8080
     volumes:
-      - .:/opt/golang
-    command : ./main
+      - .:/home/go/src/github.com/sukumDev123/restapi
+    command : go run main.go
